@@ -1,4 +1,6 @@
-// Copyright 2020 Your Name <your_email>
+//
+// Created by polinka on 27.02.2021.
+//
 
 #ifndef STACK_HEADER_HPP_
 #define STACK_HEADER_HPP_
@@ -9,7 +11,7 @@ template <typename T>
 class Stack
 {
  public:
-  Stack() : root(nullptr) {}  //по умолчанию пустой стэк
+  Stack() : root(nullptr) {} ; //по умолчанию пустой стэк
   void push(T&& value)
   {
           Node* newnode = new Node;
@@ -50,7 +52,7 @@ class Stack
   bool empty() const
   {
     return root == nullptr;
-  }
+  };
 
   ~Stack()
   {
@@ -60,7 +62,7 @@ class Stack
       root = delnode->next;
       delete delnode;
     }
-  }
+  };
 
   Stack(const Stack& stack) = delete; //конструктор копирования запрещени
   Stack(Stack&& stack) = default; //констурктор перемещения
