@@ -35,12 +35,11 @@ class Stack
                 throw std::length_error("Stack is empty!");
               }
               Node * delnode = root; //запомнили удаляемый узел
-              T value = delnode->data; //запомнили значение, которое хотим вернуть
               root = delnode->next; //вершина сместилась на следующий узел
               delete delnode;
           };
 
-  const T& top() const
+  const T& head() const
   {
           if (empty())
           {
