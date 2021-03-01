@@ -2,8 +2,8 @@
 // Created by polinka on 27.02.2021.
 //
 
-#ifndef STACK_HEADER_HPP_
-#define STACK_HEADER_HPP_
+#ifndef LAB_05_STACK_HEADER_HPP_
+#define LAB_05_STACK_HEADER_HPP_
 
 #include <iostream>
 
@@ -73,8 +73,8 @@ class Stack
   struct Node
   {
    T data; //поле с данными
-   Node * next; //указатель на следующий элемент
+   Node* next; //указатель на следующий элемент
   };
-  Node* root; //вершина стэка
+  Node *root; //вершина стэка
 };
 #endif // STACK_HEADER_HPP_
