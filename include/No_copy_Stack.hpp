@@ -27,13 +27,13 @@ class No_copy_Stack
 
   const T& head() const
   {
-    if(!root) throw std::length_error("Stack is empty!");
+    if(!root) throw std::runtime_error("Stack is empty!");
     return root->data;
   };
 
   T pop()
   {
-    if(!root) throw std::length_error("Stack is empty!");
+    if(!root) throw std::runtime_error("Stack is empty!");
     Node * delnode = root; //запомнили удаляемый узел
     T data = std::move(root->data); //запомнили значение, которое хотим вернуть
     root = delnode->next; //вершина сместилась на следующий узел

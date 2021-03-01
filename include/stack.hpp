@@ -32,7 +32,7 @@ class Stack
   {
               if (empty())
               {
-                throw std::length_error("Stack is empty!");
+                throw std::runtime_error("Stack is empty!");
               }
               Node * delnode = root; //запомнили удаляемый узел
               root = delnode->next; //вершина сместилась на следующий узел
@@ -43,7 +43,7 @@ class Stack
   {
           if (empty())
           {
-            throw std::length_error("Stack is empty!");
+            throw std::runtime_error("Stack is empty!");
           }
           return root->data;
       };
