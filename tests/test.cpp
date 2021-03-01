@@ -170,24 +170,24 @@ TEST(no_copy_stack, test_move){
                   <No_copy_Stack<big_data_no_copy<unsigned>>>::value);
 }
 TEST(no_copy_stack, test_copy){
-  EXPECT_FALSE(std::is_copy_constructible<No_copy_Stack<unsigned>>
+  EXPECT_TRUE(std::is_copy_constructible<No_copy_Stack<unsigned>>
                    ::value);
-  EXPECT_FALSE(std::is_copy_assignable<No_copy_Stack<unsigned>>
+  EXPECT_TRUE(std::is_copy_assignable<No_copy_Stack<unsigned>>
                    ::value);
-  EXPECT_FALSE(std::is_copy_constructible<No_copy_Stack<double>>
+  EXPECT_TRUE(std::is_copy_constructible<No_copy_Stack<double>>
                    ::value);
-  EXPECT_FALSE(std::is_copy_assignable<No_copy_Stack<double>>
+  EXPECT_TRUE(std::is_copy_assignable<No_copy_Stack<double>>
                    ::value);
-  EXPECT_FALSE(std::is_copy_constructible
+  EXPECT_TRUE(std::is_copy_constructible
                    <No_copy_Stack<big_data_no_copy<std::string>>>
                ::value);
-  EXPECT_FALSE(std::is_copy_assignable
+  EXPECT_TRUE(std::is_copy_assignable
                    <No_copy_Stack<big_data_no_copy<std::string>>>
                ::value);
-  EXPECT_FALSE(std::is_copy_constructible
+  EXPECT_TRUE(std::is_copy_constructible
                    <No_copy_Stack<big_data_no_copy<unsigned>>>
                ::value);
-  EXPECT_FALSE(std::is_copy_assignable
+  EXPECT_TRUE(std::is_copy_assignable
                    <No_copy_Stack<big_data_no_copy<unsigned>>>
                ::value);
 
