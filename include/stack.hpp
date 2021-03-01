@@ -77,4 +77,4 @@ class Stack
   };
   Node *root; //вершина стэка
 };
-#endif // STACK_HEADER_HPP_
+#endif // LAB_05_STACK_HEADER_HPP_

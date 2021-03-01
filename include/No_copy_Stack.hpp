@@ -2,8 +2,8 @@
 // Created by polinka on 27.02.2021.
 //
 
-#ifndef NO_COPY_STACK_HPP
-#define NO_COPY_STACK_HPP
+#ifndef LAB_05_STACK_NO_COPY_STACK_HPP
+#define LAB_05_STACK_NO_COPY_STACK_HPP
 
 #include <iostream>
 
@@ -61,4 +61,4 @@ class No_copy_Stack
 };
 
 
-#endif  // NO_COPY_STACK_HPP
+#endif  // LAB_05_STACK_NO_COPY_STACK_HPP
